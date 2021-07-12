@@ -1,0 +1,5 @@
+/*
+Modify the existing filename to `backend.tfvars` and Modify the bucket with the one created by you in the specified region.
+
+bucket=xxxxxxxxxxxx
+*/
