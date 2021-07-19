@@ -1,5 +1,9 @@
 import os
+import json
 
 
 def lambda_handler(event, context):
-    return "{} from Lambda!".format(os.environ['greeting'])
+    return {
+        'statusCode': 200,
+        'body': json.dumps({'message': "{} from Lambda!".format(os.environ['greeting'])})
+    }
